@@ -1,0 +1,2 @@
+import AdminStats from '@/components/AdminStats'; import { analytics } from '@/lib/mockAnalytics';
+export default function Admin(){return <main className='max-w-6xl mx-auto p-4 space-y-4'><h2 className='text-2xl font-bold'>Admin Dashboard</h2><AdminStats data={analytics}/><div className='bg-white border rounded p-4'><p className='font-semibold'>Language Usage</p><p>ID: {analytics.languageUsage.id}% | EN: {analytics.languageUsage.en}% | Mixed: {analytics.languageUsage.mixed}%</p></div></main>}

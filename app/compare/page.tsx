@@ -1,0 +1,2 @@
+import ProductComparisonTable from '@/components/ProductComparisonTable'; import { getRecommendations } from '@/lib/recommendationEngine';
+export default function Compare(){const items=getRecommendations({rawQuery:'',language:'id',officialOnly:false}); return <main className='max-w-6xl mx-auto p-4'><h2 className='text-2xl font-bold mb-4'>Bandingkan Produk</h2><ProductComparisonTable items={items} /></main>}
