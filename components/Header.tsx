@@ -1,0 +1,2 @@
+import Link from 'next/link'; import LanguageToggle from './LanguageToggle';
+export default function Header(){return <header className='bg-white border-b'><div className='max-w-6xl mx-auto px-4 py-3 flex justify-between'><Link href='/' className='font-bold'>BelanjaPintar AI</Link><nav className='flex gap-4 text-sm items-center'><Link href='/search'>Search</Link><Link href='/compare'>Compare</Link><Link href='/admin'>Admin</Link><LanguageToggle/></nav></div></header>;}
